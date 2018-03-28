@@ -1,0 +1,425 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+
+        <!--使用IE最新的渲染引擎-->
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>bootstrap学习</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="stylesheet" href="../../css/bootstrap.css">
+        <link rel="stylesheet" href="../../css/show.css">
+    </head>
+    <body data-spy="scroll" data-target=".navbar">
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+             <!-- 头部固定导航条 begin -->
+        <header role="banner">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+
+                        <!-- 展开和收起响应式导航条的按钮 -->
+                        <!-- navbar-toggle 类用于应用css样式 -->
+                        <!-- data-toggle 和 data-target 是Bootstrap插件要用的，分别表示预期行为和预期目标 -->
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <!-- 三道杠按钮 -->
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="#" class="navbar-brand">
+                            <img src="../../img/show/logo.png" alt="bootstrap" width="120">
+                        </a>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active">
+                                <a href="#welcome">
+                                    welcome
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#features">
+                                    features
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#impact">
+                                impact
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#signup">sign up</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+        </header>
+        <!--  头部固定导航条  end -->
+        <main>
+            <!-- 巨幕背景图 begin -->
+            <!-- jumbotron类是bs的巨幕类 -->
+            <section id="welcome" class="jumbotron">
+                <div class="container">
+                    <div class="welcome-message">
+                        <h1><strong>Big</strong> Welcome Message</h1>
+                        <p>
+                            Ingenious marketing copy. And some more ingenious marketing copy.
+                            <a href="#features" class="btn btn-lg btn-primary pull-right">
+                                Learn more <span class="icon fa fa-arrow-circle-down"></span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- 巨幕背景图 end -->
+
+            <!-- 功能区 begin -->
+            <section id="features">
+                <div class="container">
+                    <h1>Features</h1>
+                    <div class="row">
+                        <div class="features-item col-sm-6 col-md-4">
+                            <span class="icon fa fa-cloud"></span>
+                            <h2>Feature 1</h2>
+                            <p>
+                                Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.
+                            </p>
+                        </div>
+                        <div class="features-item col-sm-6 col-md-4">
+                            <span class="icon fa fa-group"></span>
+                            <h2>Feature 2</h2>
+                            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>
+                        </div>
+                        <div class="features-item col-sm-6 col-md-4">
+                             <span class="icon fa fa-comments"></span>
+                             <h2>Feature 3</h2>
+                             <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+                        </div>
+                        <div class="features-item col-sm-6 col-md-4">
+                            <span class="icon fa fa-leaf"></span>
+                            <h2>Feature 4</h2>
+                            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo. </p>
+                        </div>
+                        <div class="features-item col-sm-6 col-md-4">
+                            <span class="icon fa fa-download"></span>
+                            <h2>Feature 5</h2>
+                            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo. </p>
+                        </div>
+                        <div class="features-item col-sm-6 col-md-4">
+                            <span class="icon fa fa-coffee"></span>
+                            <h2>Feature 6</h2>
+                            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 功能区 end -->
+
+            <!-- 用户评论区 begin -->
+            <section id="impact">
+                <div class="container">
+                    <h1>Impact</h1>
+                    <div class="reviews js-masonry">
+
+                        <!-- thumbnail是缩略图样式 -->
+                        <div class="hreview review-item-1 thumbnail col-xs-12 col-sm-6 col-md-4">
+                            <img src="../../img/spa/smiling1-by-RomainGuy-600x900.jpg" alt="" alt="Customer Photo1">
+
+                            <!-- caption 用来装饰评论 -->
+                            <div class="caption">
+                                <blockquote class="description">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod, nulla pretium commodo ultricies
+                                    </p>
+                                </blockquote>
+                                <p class="reviewer">
+                                    Smiling Customer1
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="hreview review-item-2 thumbnail col-xs-12 col-sm-6 col-md-4">
+                            <img src="../../img/spa/smiling2-by-Christopher-Connell-600x400.jpg" alt="Customer Photo1">
+
+                            <!-- caption 用来装饰评论 -->
+                            <div class="caption">
+                                <blockquote class="description">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod, nulla pretium commodo ultricies
+                                    </p>
+                                </blockquote>
+                                <p class="reviewer">
+                                    Smiling Customer1
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="hreview review-item-3 thumbnail col-xs-12 col-sm-6 col-md-4">
+                            <img src="../../img/spa/smiling3-by-BerkDDemir-600x900.jpg" alt="Customer Photo1">
+
+                            <!-- caption 用来装饰评论 -->
+                            <div class="caption">
+                                <blockquote class="description">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod, nulla pretium commodo ultricies
+                                    </p>
+                                </blockquote>
+                                <p class="reviewer">
+                                    Smiling Customer1
+                                </p>
+                            </div>
+                        </div>
+                        <div class="hreview review-item-4 thumbnail col-xs-12 col-sm-6 col-md-4">
+                            <img src="../../img/spa/smiling4-by-Trung-Hieu-600x400.jpg" alt="Customer Photo1">
+
+                            <!-- caption 用来装饰评论 -->
+                            <div class="caption">
+                                <blockquote class="description">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod, nulla pretium commodo ultricies
+                                    </p>
+                                </blockquote>
+                                <p class="reviewer">
+                                    Smiling Customer1
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="hreview review-item-5 thumbnail col-xs-12 col-sm-6 col-md-4">
+                            <img src="../../img/spa/smiling5-by-Ali-Burcin-Titizel-600x900.jpg"  alt="Customer Photo1">
+
+                            <!-- caption 用来装饰评论 -->
+                            <div class="caption">
+                                <blockquote class="description">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod, nulla pretium commodo ultricies
+                                    </p>
+                                </blockquote>
+                                <p class="reviewer">
+                                    Smiling Customer1
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="hreview review-item-6 thumbnail col-xs-12 col-sm-6 col-md-4">
+                            <img src="../../img/spa/smiling6-by-Keith-Williamson-600x400.jpg" alt="Customer Photo1">
+
+                            <!-- caption 用来装饰评论 -->
+                            <div class="caption">
+                                <blockquote class="description">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod, nulla pretium commodo ultricies
+                                    </p>
+                                </blockquote>
+                                <p class="reviewer">
+                                    Smiling Customer1
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="hreview review-item-7 thumbnail col-xs-12 col-sm-6 col-md-4">
+                            <img src="../../img/spa/smiling7-by-Victor1558-600x400.jpg" alt="Customer Photo1">
+
+                            <!-- caption 用来装饰评论 -->
+                            <div class="caption">
+                                <blockquote class="description">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod, nulla pretium commodo ultricies
+                                    </p>
+                                </blockquote>
+                                <p class="reviewer">
+                                    Smiling Customer1
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 用户评论区 end -->
+
+            <section id="signup">
+                <div class="container">
+                    <h1>Sign up now!</h1>
+                    <div class="package package-basic col-md-4">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th colspan="2">
+                                        <h2>Basic Plan</h2>
+                                        <div class="price">
+                                            <span>$</span>19
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="2">
+                                        <a href="#" class="btn">Sign up now!</a>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                            <tbody>
+                                <tr>
+                                    <td>Feature</td>
+                                    <td>Name</td>
+                                </tr>
+                                <tr>
+                                    <td>Feature</td>
+                                    <td>Name</td>
+                                </tr>
+                                <tr>
+                                    <td>Feature</td>
+                                    <td>Name</td>
+                                </tr>
+                                <tr>
+                                    <td>Feature</td>
+                                    <td>Name</td>
+                                </tr>
+                                <tr>
+                                    <td>Feature</td>
+                                    <td>Name</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="package package-premium col-md-4">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th colspan="2">
+                                        <h2>Premium Plan</h2>
+                                        <div class="price">
+                                            <span>$</span>19
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="2">
+                                        <a href="#" class="btn">Sign up now!</a>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                            <tbody>
+                                <tr>
+                                    <td>Feature</td>
+                                    <td>Name</td>
+                                </tr>
+                                <tr>
+                                    <td>Feature</td>
+                                    <td>Name</td>
+                                </tr>
+                                <tr>
+                                    <td>Feature</td>
+                                    <td>Name</td>
+                                </tr>
+                                <tr>
+                                    <td>Feature</td>
+                                    <td>Name</td>
+                                </tr>
+                                <tr>
+                                    <td>Feature</td>
+                                    <td>Name</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="package package-pro col-md-4">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th colspan="2">
+                                        <h2>Pro Plan</h2>
+                                        <div class="price">
+                                            <span>$</span>19
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="2">
+                                        <a href="#" class="btn">Sign up now!</a>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                            <tbody>
+                                <tr>
+                                    <td>Feature</td>
+                                    <td>Name</td>
+                                </tr>
+                                <tr>
+                                    <td>Feature</td>
+                                    <td>Name</td>
+                                </tr>
+                                <tr>
+                                    <td>Feature</td>
+                                    <td>Name</td>
+                                </tr>
+                                <tr>
+                                    <td>Feature</td>
+                                    <td>Name</td>
+                                </tr>
+                                <tr>
+                                    <td>Feature</td>
+                                    <td>Name</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+
+        <!-- 页脚begin -->
+        <footer>
+            <img src="../../img/show/logo.png" alt="" width="120">
+            <ul class="socail">
+                <li>
+                    <a href="#">
+                        <span class="icon fa fa-weixin"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon fa fa-qq"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon fa fa-weibo">
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon fa fa-github"></span>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        <!-- 页脚end -->
+
+        <script src="../../js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="../../js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="../../js/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="../../js/vendor/masonry.pkgd.min.js"></script>
+        <script src="../../js/modules/show.js"></script>
+    </body>
+</html>
